@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact-us</title>
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="../css/custom.css">
+<link rel="stylesheet" href="../css/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark col-md-12 mt-3 sticky-top">
+    <div class="container-fluid">
+        <div class="row">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link nav-custom text-warning font-weight-bold fontSize"
+                            href="../index.html">Home</a></li>
+                    <li class="nav-item dropdown nav-custom"> <a
+                            class="nav-link dropdown-toggle text-warning font-weight-bold fontSize" href="#"
+                            data-toggle="dropdown">Category</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item dropdown"> <a class="dropdown-item dropdown-toggle"
+                                    href="wall-tile.html" data-toggle="dropdown">Wall Tiles</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="bathroom-wall-tile.html">Bathroom Wall
+                                            Tiles</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="kitchen-wall-tile.html">Kitchen Wall
+                                            Tiles</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="outdoor-wall-tile.html">Outdoor Wall
+                                            Tiles</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="livingroom-wall-tile.html">Living Wall
+                                            Tiles</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="bedroom-wall-tile.html">Bedroom Wall
+                                            Tiles</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="commercialspace-wall-tile.html">Commercial
+                                            Space
+                                            Wall Tiles</a></li>
+                                </ul>
+                            </li>
+                            <div class="dropdown-divider"></div>
+                            <li class="nav-item dropdown"> <a class="dropdown-item dropdown-toggle"
+                                    href="floor-tile.html" data-toggle="dropdown">Floor Tiles</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="bathroom-floor-tile.html">Bathroom Floor
+                                            Tiles</a></li>
+                                    <li><a class="dropdown-item" href="kitchen-floor-tile.html">Kitchen Floor
+                                            Tiles</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="outdoor-floor-tile.html">Outdoor Floor
+                                            Tiles</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="livingroom-floor-tile.html">Living Floor
+                                            Tiles</a></li>
+                                    <li><a class="dropdown-item" href="bedroom-floor-tile.html">Bedroom Floor
+                                            Tiles</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="commercialspace-floor-tile.html">Commercial
+                                            Space
+                                            Floor Tiles</a></li>
+                                </ul>
+                            </li>
+                            <div class="dropdown-divider"></div>
+                            <li class="nav-item dropdown"> <a class="dropdown-item dropdown-toggle"
+                                    href="special-tile.html" data-toggle="dropdown">Special Tiles</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="germ-free-tile.html">Germ Free Tiles</a></li>
+                                    <li><a class="dropdown-item" href="tac.html">Tac Tiles</a></li>
+                                    <li><a class="dropdown-item" href="Anti-static.html">Anti-Static Tiles</a></li>
+                                    <li><a class="dropdown-item" href="cool-roof.html">Cool-Roof Tiles</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-custom"><a class="nav-link text-warning font-weight-bold fontSize "
+                            href="e-catalouge.html">E-Catalouge</a></li>
+                    <li class="nav-item nav-custom"><a class="nav-link text-warning font-weight-bold fontSize"
+                            href="compare-product.html">Compare Product</a></li>
+                    <li class="nav-item nav-custom"><a class="nav-link text-warning font-weight-bold fontSize"
+                            href="expert-corner.html">Expert Corner</a></li>
+                    <li class="nav-item nav-custom"><a class="nav-link text-warning font-weight-bold fontSize"
+                            href="contact-us.html">Contact-us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </nav>
+  <script>
+    $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
+      if (!$(this).next().hasClass('show')) {
+        $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+      }
+      var $subMenu = $(this).next(".dropdown-menu");
+      $subMenu.toggleClass('show');
+  
+  
+      $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+        $('.dropdown-submenu .show').removeClass("show");
+      });
+      return false;
+    });
+  </script>
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <img src="../images/contact-us-banner.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-12" style="height:120px"></div>
+        <div class="col-md-12 text-center font-weight-bold">
+          <h3>SEND US YOUR QUERY</h3>
+        </div>
+        <div class="col-md-6">
+        <form class="m-2 p-4">
+        <div class="form-group">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" class=" form-control inputs" placeholder="Enter your first name">
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" class="form-control inputs" placeholder="Enter your last name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="form-control inputs" placeholder="Enter your email address">
+        </div>
+        <div class="form-group">
+          <label for="phone">Contact Number</label>
+          <input type="phone" id="phone" class="form-control inputs" placeholder="Enter your contact number">
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject of feedback/inquery</label>
+          <input type="text" class="form-control inputs" id="subject" placeholder="subject of your feedback/inquery">
+        </div>
+        <div class="form-group">
+          <label for="feedback">Feedback</label>
+          <textarea name="feedback" id="feedback" cols="40" rows="6" class="form-control inputs"></textarea>
+        </div>
+        <div class="form-group">
+          <button  type="submit" class="btn btn-block" onclick="validate()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+          </button>
+        </div>
+      </form>
+      </div>
+        <div class="col-md-6">
+          <img src="../images/contact-us.jpg" alt="" style="margin-top:75px;" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-md-12" style="height:50px"></div>
+    </div>
+    </div>
+  </section>
+  <article>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 text-center font-weight-bold">
+          <h3>LOCATION</h3>
+        </div>
+      </div>
+    </div>
+  </article>
+  <script>
+   
+function validate(){
+  var a=/^[a-zA-Z]$/;
+  var fname=document.getElementById('fname').value;
+    var lname=document.getElementById('lname').value;
+    var email=document.getElementById('email').value;
+    var phone=document.getElementById('phone').value;
+    var subject=document.getElementById('subject').value;
+    var feedback=document.getElementById('feedback').value
+    if(fname.match(a) && lname.match(a) && fname!=="" && lname!=="" && email!=="" && phone!=="" && subject!=="" && feedback!=="")
+    {
+      
+       alert("you have successfully registered");
+    }
+    else
+       {
+         alert ("Fill form correctly");
+        }
+    
+  }
+  </script>
+  <footer class="bg-dark text-wgite pt-5 pb-4">
+    <div class="container text-center text-md-left">
+      <div class="row text-center text-md-left">
+        <div class="col-md-3 col-lg-3 col-xl-3 mr-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">CERA</h5>
+          <p class="text-white">It’s a story of three decades, more than a quarter of a century. It’s a tale of a dream
+            realized against all odds.</p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mr-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">PRODUCTS</h5>
+          <p>
+            <a href="floor-tile.html" class="text-white">Floor Tile</a>
+          </p>
+          <p>
+            <a href="wall-tile.html" class="text-white">Wall Tiles</a>
+          </p>
+          <p>
+            <a href="special-tile.html" class="text-white">Special Tile</a>
+          </p>
+          <p>
+            <a href="e-catalouge.html" class="text-white">E-catalouge</a>
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mr-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">USEFUL LINKS</h5>
+          <p>
+            <a href="calculator.html" class="text-white">Tile Calculator</a>
+          </p>
+          <p>
+            <a href="compare-product.html" class="text-white">Product comprasion</a>
+          </p>
+          <p>
+            <a href="contact-us.html" class="text-white">Location</a>
+          </p>
+          <p>
+            <a href="expert-corner.html" class="text-white">Help</a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mr-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+          <p>
+            <i class="fas fa-home mr-3 text-white"></i><span class="text-white">Dha phasev, karachi
+              Pakistan</span><br><br>
+            <i class="fas fa-envelope mr-3 text-white"></i><span class="text-white">theceratile@gmail.Com</span><br><br>
+            <i class="fas fa-phone mr-3 text-white"></i><span class="text-white">+92 3162859445</span><br><br>
+            <i class="fas fa-print mr-3 text-white"></i><span class="text-white"> +01 335 633 77</span><br><br>
+          </p>
+        </div>
+        <div class="col-md-6 footer-social">
+          <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instgram.com"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+ 
+</body>
+
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product comprasion</title>
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="../css/custom.css">
+  <link rel="stylesheet" href="../css/special.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body onload="setvalue()">
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark col-md-12 mt-3 sticky-top">
+  <div class="container-fluid">
+      <div class="row">
+          <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item"><a class="nav-link nav-custom text-warning font-weight-bold fontSize"
+                          href="../index.html">Home</a></li>
+                  <li class="nav-item dropdown nav-custom"> <a
+                          class="nav-link dropdown-toggle text-warning font-weight-bold fontSize" href="#"
+                          data-toggle="dropdown">Category</a>
+                      <ul class="dropdown-menu">
+                          <li class="nav-item dropdown"> <a class="dropdown-item dropdown-toggle"
+                                  href="wall-tile.html" data-toggle="dropdown">Wall Tiles</a>
+                              <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="bathroom-wall-tile.html">Bathroom Wall
+                                          Tiles</a>
+                                  </li>
+                                  <li><a class="dropdown-item" href="kitchen-wall-tile.html">Kitchen Wall
+                                          Tiles</a>
+                                  </li>
+                                  <li><a class="dropdown-item" href="outdoor-wall-tile.html">Outdoor Wall
+                                          Tiles</a>
+                                  </li>
+                                  <li><a class="dropdown-item" href="livingroom-wall-tile.html">Living Wall
+                                          Tiles</a>
+                                  </li>
+                                  <li><a class="dropdown-item" href="bedroom-wall-tile.html">Bedroom Wall
+                                          Tiles</a>
+                                  </li>
+                                  <li><a class="dropdown-item" href="commercialspace-wall-tile.html">Commercial
+                                          Space
+                                          Wall Tiles</a></li>
+                              </ul>
+                          </li>
+                          <div class="dropdown-divider"></div>
+                          <li class="nav-item dropdown"> <a class="dropdown-item dropdown-toggle"
+                                  href="floor-tile.html" data-toggle="dropdown">Floor Tiles</a>
+                              <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="bathroom-floor-tile.html">Bathroom Floor
+                                          Tiles</a></li>
+                                  <li><a class="dropdown-item" href="kitchen-floor-tile.html">Kitchen Floor
+                                          Tiles</a>
+                                  </li>
+                                  <li><a class="dropdown-item" href="outdoor-floor-tile.html">Outdoor Floor
+                                          Tiles</a>
+                                  </li>
+                                  <li><a class="dropdown-item" href="livingroom-floor-tile.html">Living Floor
+                                          Tiles</a></li>
+                                  <li><a class="dropdown-item" href="bedroom-floor-tile.html">Bedroom Floor
+                                          Tiles</a>
+                                  </li>
+                                  <li><a class="dropdown-item" href="commercialspace-floor-tile.html">Commercial
+                                          Space
+                                          Floor Tiles</a></li>
+                              </ul>
+                          </li>
+                          <div class="dropdown-divider"></div>
+                          <li class="nav-item dropdown"> <a class="dropdown-item dropdown-toggle"
+                                  href="special-tile.html" data-toggle="dropdown">Special Tiles</a>
+                              <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="germ-free-tile.html">Germ Free Tiles</a></li>
+                                  <li><a class="dropdown-item" href="tac.html">Tac Tiles</a></li>
+                                  <li><a class="dropdown-item" href="Anti-static.html">Anti-Static Tiles</a></li>
+                                  <li><a class="dropdown-item" href="cool-roof.html">Cool-Roof Tiles</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="nav-item nav-custom"><a class="nav-link text-warning font-weight-bold fontSize "
+                          href="e-catalouge.html">E-Catalouge</a></li>
+                  <li class="nav-item nav-custom"><a class="nav-link text-warning font-weight-bold fontSize"
+                          href="compare-product.html">Compare Product</a></li>
+                  <li class="nav-item nav-custom"><a class="nav-link text-warning font-weight-bold fontSize"
+                          href="expert-corner.html">Expert Corner</a></li>
+                  <li class="nav-item nav-custom"><a class="nav-link text-warning font-weight-bold fontSize"
+                          href="contact-us.html">Contact-us</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</nav>
+<script>
+  $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
+    if (!$(this).next().hasClass('show')) {
+      $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+    }
+    var $subMenu = $(this).next(".dropdown-menu");
+    $subMenu.toggleClass('show');
+
+
+    $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+      $('.dropdown-submenu .show').removeClass("show");
+    });
+    return false;
+  });
+</script>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="text-center alert-info mt-3">COMPARE PRODUCT</h2>
+            </div>
+                <div class="col-md-12 mb-3"><img src="../images/comp-product.jpg" class="img-fluid" alt=""></div>
+                
+                <div class="col-md-12" style="line-height:35px;">
+                    <p>
+                        The primary goal of comparison shopping is to make sure that you're getting the best possible
+                        deal on the items you purchase without compromising quality. Comparison shopping empowers consumers to derive the best value for their money.
+                        It's especially beneficial when buying items used in long run.comparing product or
+                        service side-by-side,will make it easy to see which product suits best to your criteria</p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var productName = new Array("BH-WT-002-Rustic-Brown", "BH-WT-011-Origami-Hexagon", "KN-WT-010-Black-Doddle", "KN-WT-009-Multi-Tea-Set","OD-WT-002-Multi-Brown-Matt", "OD-WT-003-Motif-Brown-Matt", "LR-WT-004-Reflex-Golden", "LR-WT-012-Brown-Digital", "BD-WT-001-Brown-Matt", "BD-WT-012-Stoneage-Seashell", "CS-WT-002-Light-Dark-Grey","CS-WT-011-Graden-Theme","BH-FT-007-Greenish-Grey-Matt", "BH-FT-008-Green", "KN-FT-006-Mix-Rectangle", "KN-FT-003-Shimmery-Black-White", "OD-FT-009-Stripped-Brown", "OD-FT-010-Multi-Large-Rectangle", "LR-FT-003-Coquelicot-Glossy", "LR-FT-001-Light-Brown-Glossy", "BD-FT-008-Brown-White", "BD-FT-005-White-Marble", "CS-FT-003-Hexagonal-White", "CS-FT-007-Black-Hexagonal");
+
+        var productImage = new Array("../images/BH-WT-002-Rustic-Brown.jpg", "../images/BH-WT-011-Origami-Hexagon.jpg", "../images/KN-WT-010-Black-Doddle-.jpg", "../images/KN-WT-009-Multi-Tea-Set.jpg", "../images/OD-WT-002-Multi-Brown-Matt.jpg", "../images/OD-WT-003-Motif-Brown-Matt.jpg", "../images/LR-WT-004-Reflex-Golden.jpg", "../images/LR-WT-012-Brown-Digital.jpg", "../images/BD-WT-001-Brown-Matt.jpg", "../images/BD-WT-012-Stoneage-Seashell.jpg", "../images/CS-WT-002-Light-Dark-Grey.jpg","../images/CS-WT-011-Graden-Theme.jpg" ,"../images/BH-FT-007-Greenish-Grey-Matt.jpg","../images/BH-FT-008-Green.jpg", "../images/KN-FT-006-Mix-Rectangle.jpg", "../images/KN-FT-003-Shimmery-Black-White.jpg", "../images/OD-FT-009-Stripped-Brown.jpg", "../images/OD-FT-010-Multi-Large-Rectangle.jpg", "../images/LR-FT-003-Coquelicot-Glossy.jpg", "../images/LR-FT-001-Light-Brown-Glosy.jpg", "../images/BD-FT-008-Brown-White.jpg", "../images/BD-FT-005-White-Marble.jpg", "../images/CS-FT-003-Hexagonal-White.jpg", "../images/CS-FT-007-Black-Hexagonal.jpg");
+        var productDetails = new Array("../images/BH-WT-002.png", "../images/BH-WT-011.png", "../images/KN-WT-010.png", "../images/KN-WT-009.png", "../images/OD-WT-002.png", "../images/OD-WT-003.png", "../images/LR-WT-004.png", "../images/LR-WT-012.png", "../images/BD-WT-001.png", "../images/BD-WT-012.png", "../images/CS-WT-002.png","../images/CS-WT-011.png" ,"../images/BH-FT-007.png","../images/BH-FT-008.png", "../images/KN-FT-006.png", "../images/KN-FT-003.png", "../images/OD-FT-009.png", "../images/OD-FT-010.png", "../images/LR-FT-003.png", "../images/LR-FT-001.png", "../images/BD-FT-008.png", "../images/BD-FT-005.png", "../images/CS-FT-003.png", "../images/CS-FT-007.png");
+        function setvalue() //define
+        {
+            for (var i = 0; i < productName.length; i++) {
+                oncreate1(productName[i]);
+                oncreate2(productName[i]);
+
+            }
+
+        }
+        function oncreate1(name1) {
+            var select1 = document.getElementById('cmb1');
+            var op1 = document.createElement("option");
+            op1.text = name1;
+            op1.value = name1;
+            select1.add(op1, null);
+        }
+        function oncreate2(name2) {
+            var select2 = document.getElementById("cmb2");
+            var op2 = document.createElement("option");
+            op2.text = name2;
+            op2.value = name2;
+            select2.add(op2, null);
+        }
+        function getvalue1() {
+            var a = document.getElementById("cmb1").selectedIndex;
+            document.getElementById("name1").innerHTML = productName[a];
+
+            var b = document.getElementById("cmb1").selectedIndex;
+            document.getElementById("detail1").src = productDetails[b];
+
+            var c = document.getElementById("cmb1").selectedIndex;
+            document.getElementById("image1").src = productImage[c];
+
+        }
+        function getvalue2() {
+            var d = document.getElementById("cmb2").selectedIndex;
+            document.getElementById("name2").innerHTML = productName[d];
+
+            var e = document.getElementById("cmb2").selectedIndex;
+            document.getElementById("detail2").src = productDetails[e];
+
+            var f = document.getElementById("cmb2").selectedIndex;
+            document.getElementById("image2").src = productImage[f];
+        }
+
+    </script>
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>PRODUCT 1</h3>
+                    <select id="cmb1" onchange="getvalue1()"></select>
+                    <h6 id="name1"></h6>
+                    <img src="" alt="" id="image1" style="width:300px;height:200px;">
+                    <br>
+                    <h4>DETAILS</h4>
+                    <img src="" alt="" id="detail1">
+                </div>
+                <div class="col-md-6">
+                    <h3>PRODUCT 2</h3>
+                    <select id="cmb2" onchange="getvalue2()"></select>
+                    <h6 id="name2"></h6>
+                    <img src="" alt="" id="image2" style="width:300px;height:200px;">
+                    <br>
+                    <h4>DETAILS</h4>
+                    <img src="" alt="" id="detail2" >
+                </div>
+            </div>
+        </div>
+    </article>
+    <br><br><br><br><br><br><br><br>
+    <footer class="bg-dark text-wgite pt-5 pb-4">
+        <div class="container text-center text-md-left">
+          <div class="row text-center text-md-left">
+            <div class="col-md-3 col-lg-3 col-xl-3 mr-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">CERA</h5>
+              <p class="text-white">It’s a story of three decades, more than a quarter of a century. It’s a tale of a dream
+                realized against all odds.</p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mr-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">PRODUCTS</h5>
+              <p>
+                <a href="floor-tile.html" class="text-white">Floor Tile</a>
+              </p>
+              <p>
+                <a href="wall-tile.html" class="text-white">Wall Tiles</a>
+              </p>
+              <p>
+                <a href="special-tile.html" class="text-white">Special Tile</a>
+              </p>
+              <p>
+                <a href="e-catalouge.html" class="text-white">E-catalouge</a>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mr-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">USEFUL LINKS</h5>
+              <p>
+                <a href="calculator.html" class="text-white">Tile Calculator</a>
+              </p>
+              <p>
+                <a href="compare-product.html" class="text-white">Product comprasion</a>
+              </p>
+              <p>
+                <a href="contact-us.html" class="text-white">Location</a>
+              </p>
+              <p>
+                <a href="expert-corner.html" class="text-white">Help</a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mr-auto mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+              <p>
+                <i class="fas fa-home mr-3 text-white"></i><span class="text-white">Dha phasev, karachi
+                  Pakistan</span><br><br>
+                <i class="fas fa-envelope mr-3 text-white"></i><span class="text-white">theceratile@gmail.Com</span><br><br>
+                <i class="fas fa-phone mr-3 text-white"></i><span class="text-white">+92 3162859445</span><br><br>
+                <i class="fas fa-print mr-3 text-white"></i><span class="text-white"> +01 335 633 77</span><br><br>
+              </p>
+            </div>
+            <div class="col-md-6 footer-social">
+              <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instgram.com"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+ 
+</body>
+
+</html>

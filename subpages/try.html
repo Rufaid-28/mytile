@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.swatch {
+  display: block;
+  text-align: center;
+  position: relative;
+  margin: 300px;
+}
+  div {
+    width: 80px;
+    height: 250px;
+    position: absolute;
+    top: 0px;
+    border-radius: 5px;
+    border-top: solid 2px rgba(0, 0, 0, .2);
+    border-left: solid 3px rgba(255, 255, 255, .2);
+    border-bottom: solid 3px rgba(0, 0, 0, .2);
+    text-align: center;
+    box-sizing: border-box;
+    transform-origin: center 90%;
+    display: inline-block;
+    backface-visibility: hidden;
+    margin-left: -35px;
+    transform: rotate(0deg);
+  }
+  
+  div:before {
+    width: 16px;
+    height: 16px;
+    content: "";
+    background-color: #FFFFFF;
+    display: inline-block;
+    border-radius: 8px;
+    bottom: 10px;
+    position: absolute;
+    margin-left: 3px;
+  }
+  
+  div:nth-child(1) {
+    background-color:burlywood;
+    animation: swatch-motion-one 5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+  }
+  div:nth-child(2) {
+    background-color:blanchedalmond;
+    animation: swatch-motion-two 5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+  }
+  div:nth-child(3) {
+    background-color: cornflowerblue;
+    animation: swatch-motion-three 5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+  }
+  div:nth-child(4) {
+    background-color:cadetblue;
+    animation: swatch-motion-four 5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+  }
+  div:nth-child(5) {
+    background-color:darkgrey;
+    animation: swatch-motion-five 5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+  }
+  div:nth-child(6) {
+    background-color:forestgreen;
+    animation: swatch-motion-six 5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+  }
+  div:nth-child(7) {
+    background-color:rgb(94, 139, 34);
+    animation: swatch-red-motion-seven 5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+  }
+
+/* .transform(@fromDeg, @toDeg) {
+  0% {
+    transform: rotate(@fromDeg);
+  }
+  30%,
+  70% {
+    transform: rotate(@toDeg);
+  }
+  90%,
+  10% {
+    transform: rotate(@fromDeg);
+  }
+} */
+
+@keyframes swatch-motion-one {
+    0%
+    {
+  transform:rotate(0deg);
+    }
+    30%,70%
+    {
+        transform:rotate(-65deg);
+    }
+    90%,100%
+    {
+        transform:rotate(0deg)
+    }
+}
+
+@keyframes swatch-motion-two {
+    0%
+    {
+  transform:rotate(0deg);
+    }
+    30%,70%
+    {
+        transform:rotate(-40deg);
+    }
+    90%,100%
+    {
+        transform:rotate(0deg)
+    }
+}
+
+@keyframes swatch-motion-three {
+    0%
+    {
+  transform:rotate(0deg);
+    }
+    30%,70%
+    {
+        transform:rotate(-20deg);
+    }
+    90%,100%
+    {
+        transform:rotate(0deg)
+    }
+}
+
+@keyframes swatch-motion-four {
+  0%
+    {
+  transform:rotate(0deg);
+    }
+    30%,70%
+    {
+        transform:rotate(20deg);
+    }
+    90%,100%
+    {
+        transform:rotate(0deg)
+    }
+}
+
+@keyframes swatch-motion-five {
+  0%
+    {
+  transform:rotate(0deg);
+    }
+    30%,70%
+    {
+        transform:rotate(40deg);
+    }
+    90%,100%
+    {
+        transform:rotate(0deg)
+    }
+}
+
+@keyframes swatch-motion-six{
+    0%
+    {
+  transform:rotate(0deg);
+    }
+    30%,70%
+    {
+        transform:rotate(65deg);
+    }
+    90%,100%
+    {
+        transform:rotate(0deg)
+    }
+}
+    @keyframes swatch-motion-seven{
+    0%
+    {
+  transform:rotate(0deg);
+    }
+    30%,70%
+    {
+        transform:rotate(10deg);
+    }
+    90%,100%
+    {
+        transform:rotate(0deg)
+    }
+
+    </style>
+</head>
+<body>
+    <div class="swatch">
+        <div>The wide array of tile surfaces allows us to choose the perfect tile for the application.</div>
+        <div>Fire and Heat Resistant. </div>
+        <div>Scratch Resistant. </div>
+        <div>Easy Cleaning</div>
+        <div>Even extreme levels of ultra violet and other forms of light (sunlight) have no effect on tiles</div>
+        <div>​Tiled surfaces adapt to the air temperature of a room, which minimises heating and cooling costs</div>
+        <!-- <div>Anti-bacterial</div>
+        <div>Zero Allergens</div>
+        <div> Tiles would not absorb the odours from laundry and kitchen food and liquid spill or muddy foot prints.</div>
+        <div>Sweeping leftover hair or mop up unwanted mishaps with tiles is so easy Unlike other flooring product</div>
+       <div>Cera tiles are known to withstand the pressures over 500MPA which is equivalent to 10 elephants per tile!</div> -->
+      </div>
+</body>
+</html>

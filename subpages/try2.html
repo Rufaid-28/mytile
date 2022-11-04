@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .view {
+    width: 300px;
+    height: 200px;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    background: #fff url('../images/how-to-calculate.png') no-repeat center center
+}
+.view .mask, .view .content {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.view .mask { 
+	background-color: rgba(115,146,184, 0.7); 
+	width: 300px;
+    padding: 60px;
+	height: 300px;
+	opacity: 0;
+	transform: translate(200px, 100px) rotate(90deg);
+	transition: all 2s ease-in-out;
+}
+.view:hover .mask { 
+	opacity:1; 
+	transform: translate(-20px, -20px) rotate(90deg);
+}	
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transform: translate(200px, -200px);
+	transition: all 2s ease-in-out;
+}
+.view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center;
+    transform: translate(-200px, 200px);
+	transition: all 2s ease-in-out;
+}
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000; transform: translate(0px, 100px);
+	transition: all 2s 0.1s ease-in-out;
+
+}
+.view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+
+						  
+.view:hover h2 { 
+	transform: translate(0px,0px);
+	transition-delay: 0.3s; 
+}
+.view:hover p { 
+    transform: translate(0px,0px); 
+	transition-delay: 0.4s;
+}
+.view:hover a.info { 
+	transform: translate(0px,0px); 
+	transition-delay: 0.5s;
+}
+
+
+.view-second {
+    width: 300px;
+    height: 200px;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    background: #fff url('../images/compare-product.png') no-repeat center center
+}
+.view-second .mask, .view-second .content {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.view-second .mask { 
+	background-color: rgba(115,146,184, 0.7); 
+	width: 300px;
+    padding: 60px;
+	height: 300px;
+	opacity: 0;
+	transform: translate(200px, 100px) rotate(90deg);
+	transition: all 2s ease-in-out;
+}
+.view-second:hover .mask { 
+	opacity:1; 
+	transform: translate(-20px, -20px) rotate(90deg);
+}	
+.view-second h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transform: translate(200px, -200px);
+	transition: all 2s ease-in-out;
+}
+.view-second p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center;
+    transform: translate(-200px, 200px);
+	transition: all 2s ease-in-out;
+}
+.view-second a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000; transform: translate(0px, 100px);
+	transition: all 2s 0.1s ease-in-out;
+
+}
+.view-second a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+
+						  
+.view-second:hover h2 { 
+	transform: translate(0px,0px);
+	transition-delay: 0.3s; 
+}
+.view-second:hover p { 
+    transform: translate(0px,0px); 
+	transition-delay: 0.4s;
+}
+.view-second:hover a.info { 
+	transform: translate(0px,0px); 
+	transition-delay: 0.5s;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+    <div class="view">
+        <div class="mask"></div>
+        <div class="content">
+            <h2>Hover Style #2</h2>
+            <p>Some description</p>
+            <a href="../subpages/calculator.html" class="info">Read More</a>
+        </div>
+        </div>
+        </div>
+                <div class="col-md-6 view-second">
+            <div class="mask"></div>
+            <div class="content">
+                <h2>Hover Style #2</h2>
+                <p>Some description</p>
+                <a href="../subpages/compare-product.html" class="info">Read More</a>
+            
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>
